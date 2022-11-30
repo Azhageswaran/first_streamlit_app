@@ -45,7 +45,7 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
-streamlit.text(fruityvice_response)
+fruityvice_response_add = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+streamlit.text(fruityvice_respons_add)
 add_my_fruit = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', add_my_fruit)
